@@ -1,0 +1,10 @@
+HELP.md
+
+### VS Code ###
+.vscode/
+
+### Prettier extension
+.prettierrc
+
+### MacOS ###
+.DS_Store
