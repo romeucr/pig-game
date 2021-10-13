@@ -11,6 +11,8 @@ const diceEl = document.querySelector('.dice')
 const btnNew = document.querySelector('.btn--new')
 const btnRoll = document.querySelector('.btn--roll')
 const btnHold = document.querySelector('.btn--hold')
+const btnRules = document.querySelector('.btn--rules')
+const btnRulesCloseModal = document.querySelector('.close-modal')
 
 // Starting conditions
 score0El.textContent = 0
@@ -39,4 +41,15 @@ btnRoll.addEventListener('click', function () {
     player0EL.classList.toggle('player--active')
     player1EL.classList.toggle('player--active')
   }
+})
+
+//Rules Modal
+btnRules.addEventListener('click', function () {
+  document.querySelector('.modal').classList.remove('hidden')
+  document.querySelector('.overlay').classList.remove('hidden')
+})
+
+btnRulesCloseModal.addEventListener('click', function () {
+  document.querySelector('.modal').classList.add('hidden')
+  document.querySelector('.overlay').classList.add('hidden')
 })
